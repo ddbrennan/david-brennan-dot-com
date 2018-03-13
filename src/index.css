@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#header {
+  background: #111;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+  display: block;
+  float: right;
+  color: white;
+  width: 10%;
+  padding: 1%;
+  text-align: center;
+}
+
+.menu-item.sub-menu {
+  display: inline-block;
+}
+
+#logo {
+  display: block;
+  float: left;
+  color: white;
+  padding: 1%;
+  font-size: 2em;
+  letter-spacing: .05em;
+}
+
+#firstname {
+  font-weight: 700;
+}
+
+#lastname {
+  font-weight: 500;
+}
+
+.drop-down {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: #CCC;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 1%;
+}
+
+.sub-menu:hover .drop-down {
+  display: block;
+}
